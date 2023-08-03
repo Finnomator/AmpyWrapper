@@ -7,10 +7,19 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>Finn Drünert</Authors>
         <Version>1.0.0</Version>
+        <Description>A c# implementation of ampy.</Description>
+        <RepositoryUrl>https://github.com/Finnomator/AmpyWrapper</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
       <DocumentationFile>bin\Release\AmpyWrapper.xml</DocumentationFile>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DefaultDocumentation" Version="0.8.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
 
 </Project>
